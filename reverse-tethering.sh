@@ -37,7 +37,7 @@ if [ -z "$isEnableWifiOnMobile" ];then
         echo "请开启手机的WIFI,避免某些app以为无网络环境！"
         exit
 fi
-echo "将wifi伪装成USB..."
+echo "将USB伪装成WIFI..."
 adb shell busybox ifconfig wlan0 0.0.0.0
 echo "正在给手机分配ip地址..."
 adb shell netcfg rndis0 dhcp
