@@ -14,7 +14,7 @@ $ sudo apt-get install android-tools-adb
 
 一、 将手机通过USB与电脑连接
 
-二、 手机上打开USB网络共享和WIFI
+二、 手机上打开USB网络共享和WIFI,且将手机USB调试模式开启
 
 三、 编辑linux电脑上已经自动新建的有线连接，将其设置里IPV4设置下的“方法”改成“与其他计算机共享”
 <img src="http://i2.tietuku.com/d5850e4f81af9b9a.png" />
