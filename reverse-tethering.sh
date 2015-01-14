@@ -10,7 +10,7 @@ check_command () {
 check_command adb
 isADBWork=`adb devices  | grep -v "devices" | grep "device"`
 if [ -z "$isADBWork" ];then
-	adb kill-server > /dev/null && sudo adb devices > /dev/null
+	adb kill-server > /dev/null && adb devices > /dev/null
 else
 	echo "成功识别您的安卓手机！"
 fi
